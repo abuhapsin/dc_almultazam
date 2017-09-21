@@ -20,7 +20,11 @@ class CardWizard extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('temp/form_temp');
+		$this->load->view('theme/header');
+		$this->load->view('fw_regdata');
+		$this->load->view('theme/scriptload');
+		$this->load->view('theme/scriptfw');
+		$this->load->view('theme/footer');
 		//$this->load->view('temp/form_wizard');
 		//$this->load->view('card_wizard');
 	}
